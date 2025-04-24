@@ -1,199 +1,253 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Kalam', cursive;
-    background-color: #f0f0f0;
-    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Gaya untuk Banner Education */
+.banner-education {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px; /* Ruang antara banner dan bagian Education */
+}
+
+.banner-education img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Atau contain, sesuai preferensi Anda */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    border-radius: 5px;
+}
+
+.banner-text h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff; /* Warna teks banner */
+}
+
+.banner-text p {
+    font-size: 1.1em;
+    color: #eee; /* Warna teks deskripsi banner */
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    max-width: 960px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-/* Hero Section */
 #hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e6f7ff;
-    padding: 20px;
-    border-bottom: 5px solid #80dfff;
-}
-
-#hero-text {
-    width: 50%;
-}
-
-#hero h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#hero p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-#hero-image {
-    width: 40%;
+    padding: 40px 0;
     text-align: center;
 }
 
-.character {
-    max-width: 100%;
-    height: auto;
-    border: 3px solid #333;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+.hero-text h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    color: #e91e63;
+    margin-bottom: 10px;
 }
 
-/* About Section */
 #about {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-left: 5px solid #ffb347;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
 }
 
-#about-text {
-    width: 50%;
+.about-text {
+    flex: 1;
+    padding-right: 20px;
 }
 
-#about h2 {
+.about-text h2 {
     font-family: 'Permanent Marker', cursive;
-    color: #333;
-    border-bottom: 2px dashed #ccc;
-    padding-bottom: 10px;
+    color: #007bff;
     margin-bottom: 15px;
 }
 
-#about-image {
-    width: 40%;
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about-text li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-text li a:hover {
+    text-decoration: underline;
+}
+
+.about-image {
+    flex: 1;
     text-align: center;
 }
 
-.about-img {
-    max-width: 100%;
+.about-image img.about-img {
+    max-width: 250px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
-/* Education Section */
 #education {
-    position: relative; /* Penting untuk positioning gambar */
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-right: 5px solid #8bc34a;
-    overflow: hidden; /* Memastikan konten tidak keluar dari section */
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
 }
 
-#education-image {
-    position: absolute; /* Memposisikan gambar di dalam section */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2; /* Membuat gambar transparan */
-    z-index: 0; /* Menempatkan gambar di belakang teks */
-}
-
-.education-bg {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Memastikan gambar menutupi area */
-}
-
-#education-text {
-    position: relative; /* Menempatkan teks di atas gambar */
-    z-index: 1;
-}
-
-#education h2 {
+.education-text h2 {
     font-family: 'Permanent Marker', cursive;
-    color: #333;
-    border-bottom: 2px dashed #ccc;
-    padding-bottom: 10px;
+    color: #28a745;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .education-item {
+    background-color: #f9f9f9;
+    padding: 15px;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .education-item h3 {
-    font-size: 1.3em;
-    color: #333;
+    color: #28a745;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
-/* Contact Section */
-#contact {
+.education-item p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.education-item a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.education-item a:hover {
+    text-decoration: underline;
+}
+
+.education-image {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-top: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+.education-image img.education-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contact {
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
 }
 
 #contact h2 {
     font-family: 'Permanent Marker', cursive;
-    color: #333;
+    color: #ffc107;
     margin-bottom: 20px;
 }
 
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contact-icons a {
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 .contact-icons img {
     width: 50px;
-    height: auto;
-    transition: transform 0.2s ease-in-out;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .contact-icons img:hover {
     transform: scale(1.1);
 }
 
-/* Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 10px;
+    padding: 20px 0;
+    margin-top: 40px;
     background-color: #333;
     color: #fff;
-    font-size: 0.8em;
+    border-radius: 0 0 8px 8px;
 }
 
-/* Efek Hover */
-a {
-    color: #03a9f4;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* CSS untuk gambar di pojok */
+.fixed-image {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    width: 150px; /* Sesuaikan lebar gambar */
+    height: auto;
+    z-index: 1000; /* Pastikan di atas konten lain */
 }
 
-a:hover {
-    color: #e91e63;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .fixed-image {
+        width: 100px; /* Ukuran lebih kecil di layar kecil */
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .banner-education .banner-text h2 {
+        font-size: 1.5em; /* Ukuran teks banner responsif */
+    }
+
+    .banner-education .banner-text p {
+        font-size: 1em; /* Ukuran deskripsi banner responsif */
+    }
 }
