@@ -9,7 +9,8 @@ body {
 .banner-education {
     position: relative;
     width: 100%;
-    height: auto;
+    /* Atur tinggi maksimal agar tidak terlalu besar */
+    max-height: 400px;
     overflow: hidden;
     margin-bottom: 20px; /* Ruang antara banner dan bagian Education */
 }
@@ -18,7 +19,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover; /* Atau contain, sesuai preferensi Anda */
+    object-fit: cover; /* Memastikan gambar mengisi area dengan baik */
 }
 
 .banner-text {
@@ -31,6 +32,9 @@ body {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
     border-radius: 5px;
+    /* Tambahkan batasan lebar agar teks tidak terlalu lebar di layar besar */
+    max-width: 80%;
+    margin: 0 auto; /* Agar max-width bekerja dengan baik */
 }
 
 .banner-text h2 {
@@ -179,14 +183,18 @@ body {
     margin-bottom: 20px;
 }
 
+.contact-icons {
+    text-align: center; /* Memastikan ikon berada di tengah */
+}
+
 .contact-icons a {
     display: inline-block;
     margin: 0 15px;
 }
 
 .contact-icons img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Ukuran ikon yang lebih kecil */
+    height: 50px; /* Ukuran ikon yang lebih kecil */
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -211,7 +219,7 @@ footer {
     position: fixed;
     bottom: 20px; /* Jarak dari bawah */
     right: 20px; /* Jarak dari kanan */
-    width: 150px; /* Sesuaikan lebar gambar */
+    width: 100px; /* Ukuran lebih kecil agar tidak terlalu dominan */
     height: auto;
     z-index: 1000; /* Pastikan di atas konten lain */
 }
@@ -238,16 +246,4 @@ footer {
     }
 
     .fixed-image {
-        width: 100px; /* Ukuran lebih kecil di layar kecil */
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .banner-education .banner-text h2 {
-        font-size: 1.5em; /* Ukuran teks banner responsif */
-    }
-
-    .banner-education .banner-text p {
-        font-size: 1em; /* Ukuran deskripsi banner responsif */
-    }
-}
+        width:
