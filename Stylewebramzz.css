@@ -1,58 +1,38 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #333;
-    text-align: center;
 }
 
-h2 {
-    color: #555;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e2e2e2;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-icons {
+div {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-icons img {
-    width: 50px; /* Ukuran icon sosial media */
-    margin: 0 10px;
+    gap: 10px;
+    margin-top: 20px;
 }
