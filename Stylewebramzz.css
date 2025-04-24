@@ -1,0 +1,199 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-bottom: 5px solid #80dfff;
+}
+
+#hero-text {
+    width: 50%;
+}
+
+#hero h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.character {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #ffb347;
+}
+
+#about-text {
+    width: 50%;
+}
+
+#about h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#about-image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Section */
+#education {
+    position: relative; /* Penting untuk positioning gambar */
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-right: 5px solid #8bc34a;
+    overflow: hidden; /* Memastikan konten tidak keluar dari section */
+}
+
+#education-image {
+    position: absolute; /* Memposisikan gambar di dalam section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2; /* Membuat gambar transparan */
+    z-index: 0; /* Menempatkan gambar di belakang teks */
+}
+
+.education-bg {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Memastikan gambar menutupi area */
+}
+
+#education-text {
+    position: relative; /* Menempatkan teks di atas gambar */
+    z-index: 1;
+}
+
+#education h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.education-item h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+}
+
+#contact h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+}
+
+.contact-icons img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* Efek Hover */
+a {
+    color: #03a9f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e91e63;
+}
