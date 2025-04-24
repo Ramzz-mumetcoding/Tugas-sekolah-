@@ -1,249 +1,82 @@
 body {
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive; /* Use a playful font */
+    background-color: #f9f9f9; /* Soft background color */
+    color: #333; /* Dark text color for readability */
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    padding: 0;
 }
 
-/* Gaya untuk Banner Education */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+#hero {
+    background-color: #ffe0b2; /* Light peach background */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    background-color: #ffecb3; /* Light yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .banner-education {
     position: relative;
-    width: 100%;
-    /* Atur tinggi maksimal agar tidak terlalu besar */
-    max-height: 400px;
-    overflow: hidden;
-    margin-bottom: 20px; /* Ruang antara banner dan bagian Education */
+    margin-top: 20px;
 }
 
 .banner-education img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Memastikan gambar mengisi area dengan baik */
+    width: 100%; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .banner-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
-    border-radius: 5px;
-    /* Tambahkan batasan lebar agar teks tidak terlalu lebar di layar besar */
-    max-width: 80%;
-    margin: 0 auto; /* Agar max-width bekerja dengan baik */
-}
-
-.banner-text h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #fff; /* Warna teks banner */
-}
-
-.banner-text p {
-    font-size: 1.1em;
-    color: #eee; /* Warna teks deskripsi banner */
-}
-
-.container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-#hero {
-    padding: 40px 0;
-    text-align: center;
-}
-
-.hero-text h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 3em;
-    color: #e91e63;
-    margin-bottom: 10px;
-}
-
-#about {
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    border-top: 1px solid #ddd;
-}
-
-.about-text {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.about-text h2 {
-    font-family: 'Permanent Marker', cursive;
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.about-text ul {
-    list-style: none;
-    padding: 0;
-}
-
-.about-text li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.about-text li a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.about-text li a:hover {
-    text-decoration: underline;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
-.about-image img.about-img {
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-}
-
-#education {
-    padding: 40px 0;
-    border-top: 1px solid #ddd;
-}
-
-.education-text h2 {
-    font-family: 'Permanent Marker', cursive;
-    color: #28a745;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.education-item {
-    background-color: #f9f9f9;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
     padding: 15px;
-    margin-bottom: 15px;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.education-item h3 {
-    color: #28a745;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.education-item p {
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.education-item a {
-    color: #28a745;
-    text-decoration: none;
-}
-
-.education-item a:hover {
-    text-decoration: underline;
-}
-
-.education-image {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.education-image img.education-img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-#contact {
-    padding: 40px 0;
-    border-top: 1px solid #ddd;
     text-align: center;
 }
 
-#contact h2 {
-    font-family: 'Permanent Marker', cursive;
-    color: #ffc107;
-    margin-bottom: 20px;
+.education-text {
+    background-color: #c8e6c9; /* Light green */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icons {
-    text-align: center; /* Memastikan ikon berada di tengah */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .contact-icons a {
-    display: inline-block;
-    margin: 0 15px;
+    text-decoration: none; /* No underline on links */
 }
 
 .contact-icons img {
-    width: 50px; /* Ukuran ikon yang lebih kecil */
-    height: 50px; /* Ukuran ikon yang lebih kecil */
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    width: 50px; /* Size of icons */
+    transition: transform 0.3s; /* Animation effect */
 }
 
 .contact-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffe0b2;
+    border-radius: 10px;
 }
-
-/* CSS untuk gambar di pojok */
-.fixed-image {
-    position: fixed;
-    bottom: 20px; /* Jarak dari bawah */
-    right: 20px; /* Jarak dari kanan */
-    width: 100px; /* Ukuran lebih kecil agar tidak terlalu dominan */
-    height: auto;
-    z-index: 1000; /* Pastikan di atas konten lain */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    #about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-image {
-        margin-bottom: 20px;
-    }
-
-    .fixed-image {
-        width:
